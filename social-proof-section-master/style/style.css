@@ -1,0 +1,292 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+/* END RESET */
+
+/* UTALITY CLASSES */
+.center {
+  text-align: center;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.offsreen {
+  display: absolute;
+  left: 100000px;
+}
+/* END UTALITY CLASSES */
+
+/* GENERAL STYLE */
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* END GENERAL STYLE */
+
+/* || PROOF__HEADER */
+.header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.top-wrapper {
+  background: url(../images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -95px;
+}
+
+.proof-header__h1 {
+  width: 50%;
+  margin: auto;
+  color: indigo;
+}
+
+.proof-header__p {
+  margin-top: 20px;
+}
+/* || END PROOF__HEADER */
+
+/* || PROOF__RATE */
+.proof__rate {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 20px;
+}
+
+[alt="star"] {
+  margin-left: 5px;
+}
+
+.proof__rate-star {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.proof__rate-wrapper {
+  margin: 10px 0;
+  background-color: beige;
+  padding: 10px 50px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.review {
+  color: indigo;
+}
+/* || END PROOF__RATE */
+
+/* || FOOTER */
+
+.footer {
+  background: url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.buyers {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.buyer--wrapper {
+  padding: 20px;
+  margin: 20px;
+  background-color: indigo;
+  border-radius: 5px;
+}
+
+.buyer--header {
+  display: flex;
+  gap: 30px;
+}
+
+.buyer--image {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: text-top;
+}
+
+.buyer--wrapper p {
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.buyer--details {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.buyer--details > h2 {
+  color: whitesmoke;
+  font-weight: normal;
+}
+
+.buyer--details > h3 {
+  color: palevioletred;
+  font-weight: normal;
+}
+/* || END FOOTER */
+
+/* MOBILE VIEW */
+@media all and (min-width: 375px) {
+  .top-wrapper {
+    background: none;
+  }
+
+  .header {
+    background: url(../images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -95px;
+  }
+
+  .proof-header__h1 {
+    width: 200px;
+  }
+
+  .proof-header__p {
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .proof__rate-wrapper {
+    width: 350px;
+  }
+
+  .buyers {
+    align-items: center;
+  }
+
+  .buyer--wrapper {
+    width: 350px;
+  }
+
+  .footer {
+    background-position: 0px -200px;
+  }
+}
+
+/* DESKTOP VIEW */
+@media all and (min-width: 1440px) {
+  /* || TOP */
+  .top-wrapper {
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header {
+    background: none;
+  }
+
+  .top-wrapper {
+    background: url(../images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -100px -65px;
+  }
+
+  .top-wrapper,
+  .footer {
+    padding: 0 80px;
+  }
+
+  .header {
+    width: 30%;
+    text-align: left;
+  }
+
+  .proof-header__h1 {
+    margin: 0;
+  }
+
+  .proof__rate-wrapper {
+    width: 450px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px;
+  }
+
+  .proof__rate {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 550px;
+  }
+
+  .proof__rate-wrapper:nth-child(1) {
+    align-self: flex-start;
+  }
+
+  .proof__rate-wrapper:nth-child(2) {
+    align-self: center;
+  }
+
+  .proof__rate-wrapper:nth-child(3) {
+    align-self: flex-end;
+  }
+  /* || END TOP */
+
+  /* || BOTTOM */
+  .buyers {
+    flex-flow: row nowrap;
+    height: 300px;
+  }
+
+  .buyer--wrapper {
+    height: 200px;
+  }
+
+  .buyer--wrapper:nth-child(1) {
+    align-self: flex-start;
+  }
+
+  .buyer--wrapper:nth-child(2) {
+    align-self: center;
+  }
+
+  .buyer--wrapper:nth-child(3) {
+    align-self: flex-end;
+  }
+
+  body {
+    background: url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: 350px 80px;
+    background-repeat: no-repeat;
+  }
+
+  .footer {
+    background: none;
+  }
+}
+
+/* || ATTRIBUTION */
+.attribution {
+  font-size: 1rem;
+  color: indigo;
+  text-decoration: underline;
+}
+
+.attribution a {
+  color: indigo;
+  text-decoration: none;
+}
+/* || END ATTRIBUTION */
